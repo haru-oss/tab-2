@@ -18,7 +18,10 @@
     const handleClick = (e) => { 
         e.preventDefault();
 
-        console.log('e',e);
+        const $this = e.target;
+        const targetVal = $this.dataset.nav;
+
+        console.log('targetVal',targetVal);
 
     };
 
